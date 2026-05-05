@@ -81,6 +81,13 @@ section {
 }
 
 #hero { min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-top:9rem; }
+.hero-main {
+  display:grid;
+  grid-template-columns:minmax(360px, 1.1fr) minmax(320px, .9fr);
+  gap:2.5rem;
+  align-items:center;
+}
+.hero-intro { max-width:540px; }
 
 .hero-pill {
   display:inline-flex;align-items:center;gap:.5rem;
@@ -118,7 +125,7 @@ section {
 
 .hero-desc { max-width:540px;color:var(--txt2);font-size:1.05rem;line-height:1.85;margin-bottom:2.5rem;animation:fadeSlide .7s .45s both; }
 
-.hero-actions { display:flex;gap:1rem;flex-wrap:wrap;animation:fadeSlide .7s .55s both; }
+.hero-actions { display:flex;gap:.75rem;flex-wrap:nowrap;animation:fadeSlide .7s .55s both; }
 
 .btn-grad {
   display:inline-flex;align-items:center;gap:.5rem;
@@ -287,6 +294,8 @@ footer span { color:var(--a1); }
   nav { padding:1rem 1.5rem; }
   .nav-links { gap:1.2rem; }
   section { padding:4.5rem 1.2rem; }
+  .hero-main { grid-template-columns:1fr; gap:1.25rem; }
+  .hero-actions { flex-wrap:wrap; }
   .hero-stats { gap:2rem; }
   .skills-wrap { grid-template-columns:1fr; }
   .edu-row { grid-template-columns:1fr; }
